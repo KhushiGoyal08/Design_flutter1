@@ -1,4 +1,5 @@
-import 'package:design_flutter/pages/homepage.dart';
+
+import 'package:design_flutter/pages/refer_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
