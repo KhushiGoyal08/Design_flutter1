@@ -1,5 +1,6 @@
 
 import 'package:design_flutter/pages/error.dart';
+import 'package:design_flutter/pages/verification.dart';
 // import 'package:design_flutter/pages/file_upload.dart';
 // import 'package:design_flutter/pages/refer_page.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
    return  const  MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: MyError()
+    home: Verification(),
    );
   }
 }

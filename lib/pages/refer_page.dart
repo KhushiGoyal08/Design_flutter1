@@ -342,39 +342,7 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
            const SizedBox(height: 40,),
-          //        GestureDetector(
-          //   onTap: () => Navigator.of(context).pop(),
-          //   child: Container(
-          //    height: 65,
-          //     padding:
-          //         const EdgeInsets.symmetric(horizontal: 159, vertical: 23),
-          //     decoration: ShapeDecoration(
-          //       image: const DecorationImage(
-          //         image: AssetImage("images/img.png"),
-          //         fit: BoxFit.fill,
-          //       ),
-          //       shape: RoundedRectangleBorder(
-          //         borderRadius: BorderRadius.circular(24),
-          //       ),
-          //     ),
-          //     child:const Center(
-          //       child:  Padding(
-          //         padding: EdgeInsets.all(8),
-          //         child: Text(
-          //           'INVITE ANOTHER',
-          //           textAlign: TextAlign.center,
-          //           style: TextStyle(
-          //             color: Colors.white,
-          //             fontSize: 16,
-          //             fontFamily: 'SF Pro',
-          //             fontWeight: FontWeight.w800,
-                     
-          //           ),
-          //         ),
-          //       ),
-          //     ),
-          //   ),
-          // ),
+          //      
           button(context)
           ],
         ),
