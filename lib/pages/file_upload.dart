@@ -1,3 +1,4 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 
 
@@ -44,19 +45,26 @@ class Myuploads extends StatelessWidget {
             ),
             Column(
               children: [
-                Container(
-                  width: 250,
-                  height: 248,
-                  decoration: ShapeDecoration(
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      side: const BorderSide(
-                      
-                        width: 2,
-                        strokeAlign: BorderSide.strokeAlignOutside,
-                        color:    Color(0xFFB8B8B8),
+                DottedBorder(
+                color:const Color(0xFFB8B8B8),
+              strokeWidth: 3, 
+              dashPattern: const  [14,6], 
+              borderType: BorderType.Circle,
+
+                  child: Container(
+                    width: 250,
+                    height: 248,
+                    decoration: ShapeDecoration(
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        // side: const BorderSide(
+                        
+                        //   width: 2,
+                        //   strokeAlign: BorderSide.strokeAlignOutside,
+                        //   color:    Color(0xFFB8B8B8),
+                        // ),
+                        borderRadius: BorderRadius.circular(280),
                       ),
-                      borderRadius: BorderRadius.circular(280),
                     ),
                   ),
                 ),
@@ -85,3 +93,5 @@ class Myuploads extends StatelessWidget {
         ));
   }
 }
+
+
