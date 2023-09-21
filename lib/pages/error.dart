@@ -9,24 +9,29 @@ class MyError extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Opacity(
-            opacity: 0.6,
-            child: CircleAvatar(
-              backgroundImage: AssetImage("images/background.jpg"),
-              radius: 100,
-              child: Opacity(
-                opacity: 1,
-                child: CircleAvatar(
-                  backgroundImage: AssetImage("images/background.jpg"),
-                  radius: 60,
-                  child: Text(
-                    '!',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 64,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w500,
-                      height: 0,
+        const    Padding(
+            padding:  EdgeInsets.only(
+              top: 30
+              ),
+            child: Opacity(
+              opacity: 0.6,
+              child: CircleAvatar(
+                backgroundImage: AssetImage("images/background.jpg"),
+                radius: 100,
+                child: Opacity(
+                  opacity: 1,
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage("images/background.jpg"),
+                    radius: 60,
+                    child: Text(
+                      '!',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 64,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w500,
+                        height: 0,
+                      ),
                     ),
                   ),
                 ),
@@ -43,6 +48,9 @@ class MyError extends StatelessWidget {
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w500,
                 ),
+              ),
+              SizedBox(
+             height: 10,
               ),
               Text(
                 'Invalid Document',
@@ -65,7 +73,7 @@ class MyError extends StatelessWidget {
                       height: 93,
                       decoration: ShapeDecoration(
                         image: const DecorationImage(
-                          image: AssetImage("images/background.jpg"),
+                          image: AssetImage("images/Rectangle 44.png"),
                           fit: BoxFit.fill,
                         ),
                         shape: RoundedRectangleBorder(
@@ -79,17 +87,11 @@ class MyError extends StatelessWidget {
                child:   Column(
                   children: [
                     Center(
-                        child: Text(
-                          '↺',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 25,
-                            fontFamily: 'Roboto',
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                        child: Image(image: AssetImage("images/Vector.png"),),
                       ),
-             
+             SizedBox(
+              height: 5,
+             ),
                      Center(
                         child: Text(
                           'Retry',
@@ -115,7 +117,7 @@ class MyError extends StatelessWidget {
                       height: 59,
                       decoration: ShapeDecoration(
                         image: const DecorationImage(
-                          image: AssetImage("images/img.png"),
+                          image: AssetImage("images/Rectangle 41.png"),
                           fit: BoxFit.fill,
                         ),
                         shape: RoundedRectangleBorder(
