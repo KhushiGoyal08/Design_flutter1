@@ -1,8 +1,6 @@
-
+import 'package:design_flutter/pages/email.dart';
 import 'package:design_flutter/pages/file_upload.dart';
 
-// import 'package:design_flutter/pages/file_upload.dart';
-// import 'package:design_flutter/pages/refer_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
    return  const  MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Myuploads(),
+    home: RegisterEmail(),
    );
   }
 }
