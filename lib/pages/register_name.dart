@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RegisterName extends StatefulWidget {
   const RegisterName({super.key});
@@ -41,8 +42,8 @@ class _RegisterNameState extends State<RegisterName> {
                         borderRadius: BorderRadius.circular(30),
                       ),
                     ),
-                    child: const Padding(
-                      padding:  EdgeInsets.only(
+                    child: Padding(
+                      padding:  const EdgeInsets.only(
                         top: 33.91,
                       left: 33.91,
                       right: 28.26,
@@ -58,47 +59,47 @@ class _RegisterNameState extends State<RegisterName> {
                                 opacity: 0.54,
                                 child: Text(
                                   'Resigter New User',
-                                  style: TextStyle(
-                                    color: Colors.white,
+                                  style: GoogleFonts.inter(
+                                    color:  Colors.white,
                                     fontSize: 14,
-                                    fontFamily: 'Inter',
+                                    
                                     fontWeight: FontWeight.w500,
                                     height: 0,
                                   ),
                                 ),
                               ),
-                              Image(
+                             const   Image(
                                 image: AssetImage("images/mastercard_logo.png"),
                               ),
                             ],
                           ),
                           Text(
                             'Devon Timberlake',
-                            style: TextStyle(
+                            style: GoogleFonts.inter(
                               color: Colors.white,
                               fontSize: 24,
-                              fontFamily: 'Inter',
+                             
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          SizedBox(
+                        const   SizedBox(
                             height: 77.26,
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(
+                        Padding(
+                            padding: const EdgeInsets.only(
                               left: 20,
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Opacity(
+                             const Opacity(
                                   opacity: 0.90,
                                   child: Text(
                                     '*****************',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 14,
-                                      fontFamily: 'Inter',
+                                    
                                       fontWeight: FontWeight.w500,
                                       height: 0,
                                       letterSpacing: 0.50,
@@ -108,10 +109,10 @@ class _RegisterNameState extends State<RegisterName> {
                                 Text(
                                   '12/24',
                                   textAlign: TextAlign.right,
-                                  style: TextStyle(
+                                  style: GoogleFonts.inter(
                                     color: Colors.white,
                                     fontSize: 14,
-                                    fontFamily: 'Inter',
+                                  
                                     fontWeight: FontWeight.w500,
                                     height: 0,
                                     letterSpacing: 0.50,
@@ -134,41 +135,41 @@ class _RegisterNameState extends State<RegisterName> {
               padding: const EdgeInsets.only(left: 24),
               child: Image.asset("images/Register.png"),
             ),
-            const Padding(
-              padding: EdgeInsets.only(
+          Padding(
+              padding: const EdgeInsets.only(
                 top: 10,
                 left: 24,
               ),
               child: Text(
                 'Sign to your account',
-                style: TextStyle(
-                  color: Color(0xFF1E1D1D),
+                style: GoogleFonts.karla(
+                  color: const Color(0xFF1E1D1D),
                   fontSize: 16,
-                  fontFamily: 'Karla',
+                  
                   fontWeight: FontWeight.w400,
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.only(top: 35, left: 24, bottom: 10),
+       Padding(
+              padding: const EdgeInsets.only(top: 35, left: 24, bottom: 10),
               child: Text(
                 'FIRST NAME',
-                style: TextStyle(
-                  color: Color(0xFF1E1D1D),
+                style: GoogleFonts.karla(
+                  color: const  Color(0xFF1E1D1D),
                   fontSize: 16,
-                  fontFamily: 'Karla',
+                  
                   fontWeight: FontWeight.w400,
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
               child: SingleChildScrollView(
                 child: TextField(
-                 style: TextStyle(
+                 style: GoogleFonts.inter(
                   color: Colors.white,
                  ),
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     filled: true,
                     fillColor: Color(0xFF4D4D4D),
                       border: OutlineInputBorder(
@@ -183,7 +184,7 @@ class _RegisterNameState extends State<RegisterName> {
                 style: TextStyle(
                   color: Color(0xFF1E1D1D),
                   fontSize: 16,
-                  fontFamily: 'Karla',
+                  
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -216,7 +217,7 @@ class _RegisterNameState extends State<RegisterName> {
             fit: BoxFit.fill,
           ),
         ),
-        child: const Row(
+        child:  Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -224,10 +225,10 @@ class _RegisterNameState extends State<RegisterName> {
             Text(
               'Next',
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: GoogleFonts.karla(
                 color: Colors.white,
                 fontSize: 16,
-                fontFamily: 'Karla',
+               
                 fontWeight: FontWeight.w700,
               ),
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Verification extends StatelessWidget {
   const Verification({super.key});
@@ -45,8 +46,8 @@ class Verification extends StatelessWidget {
                             borderRadius: BorderRadius.circular(0)),
                       ),
                       ),
-                   const Padding(
-                      padding:  EdgeInsets.symmetric(
+                    Padding(
+                      padding: const  EdgeInsets.symmetric(
                         vertical: 16,
                         
                       ),
@@ -54,10 +55,10 @@ class Verification extends StatelessWidget {
                         child: Text(
                           'CLOSE',
                           
-                          style: TextStyle(
+                          style: GoogleFonts.roboto(
                             color: Colors.white,
                             fontSize: 20,
-                            fontFamily: 'Roboto',
+                            
                             fontWeight: FontWeight.w600,
                             height: 0,
                           ),

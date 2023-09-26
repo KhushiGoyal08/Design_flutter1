@@ -1,5 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class Myuploads extends StatelessWidget {
@@ -13,29 +14,29 @@ class Myuploads extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const Padding(
-              padding: EdgeInsets.only(top: 40),
+            Padding(
+              padding: const EdgeInsets.only(top: 40),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 20),
+                    padding: const EdgeInsets.only(top: 20),
                     child: Text(
                       'File Upload ',
-                      style: TextStyle(
-                        color: Color(0xFF1C1C1C),
+                      style:GoogleFonts.raleway(
+                        color: const Color(0xFF1C1C1C),
                         fontSize: 24,
-                        fontFamily: 'Raleway',
+                        
                         fontWeight: FontWeight.w700,
                         height: 0.03,
                         letterSpacing: -0.50,
                       ),
                     ),
                   ),
-                  SizedBox(
+                const   SizedBox(
                     width: 20,
                   ),
-                  Icon(
+                const   Icon(
                     Icons.cloud_upload_outlined,
                     color: Color.fromARGB(255, 242, 181, 91),
                     size: 40,
@@ -71,12 +72,12 @@ class Myuploads extends StatelessWidget {
                 const SizedBox(
                   height: 28,
                 ),
-                const Text(
+               Text(
                   'Click from your camera',
-                  style: TextStyle(
+                  style:GoogleFonts.raleway(
                     color: Colors.black,
                     fontSize: 16,
-                    fontFamily: 'Raleway',
+                    
                     fontWeight: FontWeight.w700,
                     height: 0.07,
                   ),
